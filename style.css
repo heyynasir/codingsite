@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: aqua; */
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3vw;
+    position: relative;
+}
+nav h1{
+    font-size: 2.5vw;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4vw;
+    font-weight: 800;
+    padding: 5px 10px;
+    transition: all linear 0.2s;
+}
+a:hover{
+    background-color: orangered;
+    border-radius: 5px;
+}
+.navbar .btn1{
+    padding: 7px 20px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background-color: rgb(11, 219, 11);
+}
+nav .fa-solid{
+    display: none;
+}
+
+.mainSection{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+.mainSection .left{
+    width: 50%;
+    height: 100%;
+    padding: 3vw;
+  
+}
+.left h1{
+    font-size: 3.4rem;
+    margin: 10px 0px;
+}
+.left p{
+    font-size: 20px;
+    margin: 15px 0px;
+}
+.left button{
+    padding: 8px 15px;
+    font-size: 1.1rem;
+    margin: 15px 0px;
+    display: block;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    transition: all linear 0.3s;
+}
+.left  button:hover{
+    padding: 13px 25px;
+    background-color: rgb(11, 219, 11);
+}
+.left span{
+    color: lightseagreen;
+}
+.right{
+    width: 50%;
+    height: 100%;
+}
+.right img{
+    width: 94%;
+    height: 94%;
+    margin-top: 10px;
+}
+@media (max-width:600px) {
+    nav{
+        /* background-color: blueviolet; */
+        padding: 0px 30px;
+    }
+    nav h1{
+        font-size: 8vw;
+    }
+    nav .navbar{
+        display: none;
+       
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 40px;
+    }
+
+    .mainSection{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+   .left h1{
+    width: 100vw;
+    margin: 30px 0px;
+   }
+   .left p{
+    width: 100vw;
+    margin: 30px 0px;
+   }
+   .left button{
+    padding: 10px 20px;
+   }
+
+   .right img{
+    width: 100vw;
+   }
+   .mainSection{
+    padding: 20px;
+   }
+}
